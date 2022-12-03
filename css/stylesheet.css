@@ -1,4 +1,8 @@
-
+:root{
+	--primary-color:#00bcd4;
+	--secondry-color:#333;
+	--white:#fff;
+}	
 .container{
 	width:1170px;
 	margin:0 auto;
@@ -53,8 +57,8 @@
 }
 .button{
 	display:inline-block;
-	color:#fff;
-	background-color:#ff5821;
+	color:var(--white);
+	background-color:var(--primary-color);
 	text-decoration:none;
 	padding:8px 25px;
 	text-align:center;
@@ -89,31 +93,31 @@
 }
 /*-------header section-------*/
 .header{
-	background-color:#fff;
+	background-color:var(--white);
 }
 .header-info{
-	background-color:#000;
+	background-color:var(--secondry-color);
 }
 .content-info span{
 	display:inline-block;
 	margin-right:10px;
-	color:#fff;
+	color:var(--white);
 	font-size:14px;
 	padding:12px 0;
 	}
 .content-info span >a{
-	color:#fff;
+	color:var(--white);
 	text-decoration:none;
 }
 .content-info span >a:hover{
-	color:#ff5821;
+	color:var(--primary-color);
 }
 .content-info span i{
-	color:#ff5821;
+	color:var(--primary-color);
 	margin-right:5px;
 }
 .header-button{
-	background-color:#ff5821;
+	background-color:var(--primary-color);
 	height:100%;
 }
 /*-------nav section-------*/
@@ -140,23 +144,71 @@ h1.logo a{
 	font-size:14px;
 }
 .menubar a:hover{
-	color:#ff5821;
+	color:var(--primary-color);
 }
 .menubar a.active{
-	color:#ff5821;
+	color:var(--primary-color);
 }
 
 /*-------banner section-------*/
 .banner-section{
-	background-color:#ff5821;
-	padding:140px 0;
+	background-image:linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)),url("../image/bg-01.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	padding:270px 0;
 }
 .banner-content{
-	background-color:#000;
-	height:300px;
 	width:60%;
 }
-
+.banner-content h1{
+	font-size:48px;
+	color:var(--white);
+	font-family: 'Raleway', sans-serif;
+	font-weight:bold;
+	margin-bottom:15px;
+}
+.banner-content p{
+	font-size:20px;
+	color:#eee;
+	margin-bottom:55px;
+}
+.b-c-g{
+	position:relative;
+	display:inline-block;
+	padding-left:20px;
+	padding-top:6px;
+	padding-bottom:6px;
+	
+}
+.b-c-g a{
+	border-radius:25px;
+	padding-left:42px;
+	padding-top:12px;
+	padding-bottom:12px;
+	background-color:var(--secondry-color);
+	transition:all .3s ease;
+	font-size:15px;
+	font-weight:400;
+}
+.b-c-g a:hover{
+	background-color:var(--primary-color);
+	
+}
+.b-c-g i{
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:var(--primary-color);
+	height:50px;
+	width:50px;
+	text-align:center;
+	line-height:50px;
+	color:var(--white);
+	border-radius:50%;
+	box-shadow:1px 0 5px -2px #000;
+}
 /*-------why-choose section-------*/
 .why-choose{
 	background-color:;
@@ -165,26 +217,26 @@ h1.logo a{
 	top:-140px;
 }
 .why-choose-1{
-	background-color:#000;
+	background-color:var(--secondry-color);
 	height:350px;
 }
 .choose-item{
-	background-color:#000;
+	background-color:var(--secondry-color);
 	height:250px;
 }
 
 
 /*-------about section-------*/
 .about{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	padding:80px 0;
 }
 .about-img{
-	background-color:#000;
+	background-color:var(--secondry-color);
 	height:400px;
 }
 .about-content{
-	background-color:#000;
+	background-color:var(--secondry-color);
 	height:400px;
 }
 
@@ -195,14 +247,14 @@ h1.logo a{
 	padding:40px 0;
 }
 .client-logo{
-	background-color:#ff5821;
+	background-color:#00bcd4;
     height:60px;	
 }
 
 /*-------services section-------*/
 
 .services{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	padding:80px 0;
 }
 .sec-title{
@@ -221,7 +273,7 @@ h1.logo a{
 	padding:80px 0;
 }	
 .our-item{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	height:350px;
 	margin-top:60px;
 	padding:20px;
@@ -233,7 +285,7 @@ h1.logo a{
 }
 /*-------freelancer section-------*/
 .freelancer{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	padding:80px 0;
 }
 .freelancer-item{
@@ -248,23 +300,23 @@ h1.logo a{
 	padding:80px 0;
 }
 .portfolio-title{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	padding:0 60px;
 	height:150px;
 }
 .portfolio-a{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	height:50px;
 	margin-top:10px;
 }
 .portfolio-item{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	height:270px;
 	margin-top:40px;
 }
 /*-------team section-------*/
 .team{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	padding:80px 0;
 }
 .team-title{
@@ -283,18 +335,18 @@ h1.logo a{
 	padding:80px 0;
 }
 .pricing-title{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	height:140px;
 }	
 .pricing-item{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	height:350px;
 	margin-top:30px;
 }
 
 /*-------faq section-------*/
 .faq{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	padding:80px;
 }
 .faq-title{
@@ -317,26 +369,26 @@ h1.logo a{
 	padding:80px 0;
 }
 .contact-title{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	height:150px;
 }
 .contact-full{
 	margin:0 200px;
 }
 .contact-item{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	height:200px;
 	margin-top:30px;
 }
 .contact-item-1{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	height:400px;
 	margin-top:30px;
 }
 
 /*-------footer section-------*/
 .foot{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	padding:80px 0;
 }
 .foot-item{
@@ -349,10 +401,10 @@ h1.logo a{
 	padding:20px 0;
 }
 .foot-info{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	height:80px;
 }
 .foot-contact{
-	background-color:#ff5821;
+	background-color:#00bcd4;
 	height:80px;
 }
