@@ -2,6 +2,7 @@
 	--primary-color:#00bcd4;
 	--secondry-color:#333;
 	--white:#fff;
+	--bg-color:#f8feff;
 }	
 .container{
 	width:1170px;
@@ -274,7 +275,7 @@ h1.logo a{
 
 /*-------about section-------*/
 .about{
-	background-color:#f8feff;
+	background-color:var(--bg-color);
 	padding:80px 0;
 }
 .about-img{
@@ -354,30 +355,115 @@ h1.logo a{
 
 /*-------client section-------*/
 .client{
-	background-color:#000;
-	padding:40px 0;
+	background-color:#fff;
+	padding:50px 0;
 }
 .client-logo{
-	background-color:#00bcd4;
-    height:60px;	
+	padding:10px 30px;
 }
-
+.client-logo img{
+	width:100%;
+	height:auto;
+	filter:grayscale(100%);
+	opacity:0.5;
+}
+.client-logo:hover img{
+	filter:grayscale(0%);
+	opacity:1;
+}
+.circles{
+	text-align:center;
+	padding:20px 0 0 0;
+}
+.circles span{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	border:solid 1px var(--primary-color);
+	opacity:0.8;
+	margin:0 3px;
+	cursor:pointer;
+}
+.circles span:hover{
+	background-color:var(--primary-color);
+}
+.circles span.active{
+	background-color:var(--primary-color);
+}
 /*-------services section-------*/
 
 .services{
-	background-color:#00bcd4;
+	background-color:var(--bg-color);
 	padding:80px 0;
 }
 .sec-title{
-	background-color:#000;
-	height:60px;
+	text-align:center;
+	
+}
+.sec-title h2{
+	color:#000;
+	font-size:30px;
+	margin-bottom:20px;
+	font-weight:600;
+}
+.sec-title p{
+	margin-bottom:40px;
+	font-weight:400;
 }
 .serives-item{
-	background-color:#000;
-	height:250px;
+	background-color:#fff;
 	margin-top:60px;
+	position:relative;
+	padding:45px 20px 30px;
+	box-shadow:0 0 8px #ccc;
+	text-align:center;
+	min-height:200px;
 }	
-	
+.servies-icon{
+	position:absolute;
+	top:-30px;
+	left:50%;
+	width:60px;
+	height:60px;
+	text-align:center;
+	line-height:65px;
+	color:#fff;
+	font-size:25px;
+	transform:translateX(-50%);
+	z-index:1;
+}
+.servies-icon:after{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:var(--primary-color);
+	border:solid 1px var(--primary-color);
+	border-radius:50%;
+	z-index:-1;
+	transition:all .2s ease;
+}
+.serives-item h3 a{
+	display:inline-block;
+	text-decoration:none;
+	color:#000;
+	font-size:20px;
+	font-weight:500;
+	margin-bottom:20px;
+}
+.serives-item:hover h3 a{
+	color:var(--primary-color);
+}
+.serives-item:hover .servies-icon:after{
+	transform:scale(1.2);
+	background-color:#fff;
+}
+.serives-item:hover .servies-icon{
+	color:var(--primary-color);
+}
 
 .our{
 	background-color:#000;
