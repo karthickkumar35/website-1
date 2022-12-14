@@ -663,7 +663,7 @@ h1.logo a{
 	border-radius:25px;
 }
 .portfolio-item{
-	margin-top:40px;
+	margin-top:30px;
 	position:relative;
 }
 .portfolio-item img{
@@ -759,7 +759,7 @@ h1.logo a{
 	left:0;
 	right:0;
 	font-size:22px;
-	background-color:rgba(255, 255, 255, 0.9);
+	background-color:rgba(255, 255, 255, 0.8);
 	opacity:0;
 	padding:8px 0;
 	transition:all .3s ease;
@@ -841,6 +841,7 @@ h1.logo a{
 .button-out a{
 	text-decoration:none;
 	color:#fff;
+	box-shadow: 0 0 5px #00bcd470;
 	transition:all .2s ease;
 }
 .button-out a:hover{
@@ -865,6 +866,10 @@ h1.logo a{
 	color:#343a40;
 	font-size:16px;
 	font-weight:500;
+	transition:all .2s ease;
+}
+.faq-item a:hover{
+	color:var(--primary-color);
 }
 .faq-item .col-lg-11 iconify-icon{
 	color:var(--primary-color);
@@ -937,7 +942,7 @@ h1.logo a{
 border: 2px solid var(--primary-color);
 }
 .contact-item-1 textarea:hover{
-border: 2px solid var(--primary-color);
+border: 1px solid var(--primary-color);
 }
 .contact-item-1 textarea{
 	padding:12px 10px;
@@ -1001,20 +1006,27 @@ border: 2px solid var(--primary-color);
 	border-radius:25px;
 	background-color:#fff;
 	overflow:hidden;
+	position:relative;
 }
-.foot-hd .sub a{
-	display:inline-block;
-	text-decoration:none;
+.foot-hd .sub input[type="text"]{
+	border:0;
+	padding:8px 16px;
+	margin:4px 12px;
+	}
+.foot-hd .sub input[type="submit"]{
+	padding:8px 12px;
+	position:absolute;
+	top:0;
+	right:0;
 	background-color:var(--primary-color);
-	color:#fff;
-	float:right;
-	height:44px;
 	border-radius:25px;
-	padding:12px;
-	font-size:18px;
+	color:#fff;
+	font-size:20px;
+	border:0;
+	cursor:pointer;
 	transition:all .2s ease;
 }
-.foot-hd .sub a:hover{
+.foot-hd .sub input[type="submit"]:hover{
 	opacity:0.8;
 }
 .foot-1{
