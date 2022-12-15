@@ -633,19 +633,15 @@ h1.logo a{
 	font-weight:300;
 	
 }
-.portfolio-item-in .ic{
-	line-height:50px;
-	text-align:right;
-}
-.portfolio-item-in h3{
-	font-size:20px;
+.portfolio-item-in .portfilio-item-o h3{
+	font-size:18px;
 	font-weight:600;
 	margin-bottom:10px;
 	font-family: 'Raleway', sans-serif;
 	color:#473d3a;
 }
-.portfolio-item-in p{
-	font-size:12px;
+.portfolio-item-in .portfilio-item-o p{
+	font-size:14px;
 	font-weight:300;
 	color:#473d3a;
 }
@@ -657,12 +653,19 @@ h1.logo a{
 	right:0;
 	background-color:rgba(255, 255, 255, 0.9);
 	margin:20px 20px;
-	padding:20px 10px;
+	padding:15px 10px;
 	align-content:space-around;
-	transition:all .2s ease;
+	transition:all .3s ease;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	visibility:hidden;
+	transform:translateY(25px);
 }
 .portfolio-item:hover .portfolio-item-in{
 	opacity:1;
+	visibility:visible;
+	transform:translateY(0px);
 }
 /*-------team section-------*/
 .team{
@@ -819,17 +822,20 @@ h1.logo a{
 .faq-item a:hover{
 	color:var(--primary-color);
 }
-.faq-item .col-lg-11 iconify-icon{
+.faq-row{
+	display:flex;
+	justify-content:space-between;
+}
+.faq-item .faq-1st iconify-icon{
 	color:var(--primary-color);
 	font-size:24px;
 	margin-right:5px;
 	vertical-align:sub;
 }
-.faq-item .col-lg-1 iconify-icon{
+.faq-item .faq-2nd iconify-icon{
 	font-size:30px;
-	float:right;
 }
-.faq-item .col-lg-1 iconify-icon:hover{
+.faq-item .faq-2nd iconify-icon:hover{
 	color:var(--primary-color);
 }
 /*-------contact section-------*/
@@ -956,9 +962,9 @@ border: 1px solid var(--primary-color);
 	overflow:hidden;
 	position:relative;
 }
-.foot-hd .sub input[type="text"]{
+.foot-hd .sub input[type="email"]{
 	border:0;
-	padding:8px 16px;
+	padding:8px 30px;
 	margin:4px 12px;
 	}
 .foot-hd .sub input[type="submit"]{
