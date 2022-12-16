@@ -680,18 +680,18 @@ h1.logo a{
 	overflow:hidden;
 	position:relative;
 }
-.team-item img{
+.team-item .team-item-img img{
 	display:inline-block;
 	height:auto;
 	width:100%;
 }
-.team-item h2{
+.team-item .team-item-h h2{
 	font-family: 'Raleway', sans-serif;
 	font-weight:700;
 	font-size:18px;
 	margin:15px 0;
 }
-.team-item h4{
+.team-item .team-item-h h4{
 	color:#989595;
 	font-size:12px;
 	padding-bottom:30px;
@@ -738,7 +738,7 @@ h1.logo a{
 	background-color:#f8f8f8;
 	padding:20px 0;
 }
-.pricing-item span h3{
+.pricing-item  .pricing-item-h{
 	font-size:20px;
 	color:#fff;
 	background-color:var(--primary-color);
@@ -830,7 +830,7 @@ h1.logo a{
 	color:var(--primary-color);
 	font-size:24px;
 	margin-right:5px;
-	vertical-align:sub;
+	vertical-align:middle;
 }
 .faq-item .faq-2nd iconify-icon{
 	font-size:30px;
@@ -995,8 +995,9 @@ border: 1px solid var(--primary-color);
 	font-size:14px;
 	font-weight:600;
 }
-.foot-info p span{
+.foot-info p a{
 	color:var(--primary-color);
+	text-decoration:none;
 }
 .foot-contact{
 	text-align:right;
