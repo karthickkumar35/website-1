@@ -2,7 +2,7 @@
 	--primary-color:#00bcd4;
 	--secondry-color:#333;
 	--white:#fff;
-	--bg-color:#f8feff;
+	--bg-color:#e7f7f95c;
 }	
 .container{
 	width:1170px;
@@ -324,6 +324,7 @@ h1.logo a{
 	display:flex;
 	margin-top:50px;
 	align-items:flex-start;
+	transition:all .3s ease;
 }
 .about-item-icon{
 	width:70px;
@@ -338,18 +339,23 @@ h1.logo a{
 	flex:0 0 auto;
 	transition:all .3s ease;
 }
-.about-item-icon:hover{
+.about-items:hover .about-item-icon{
 	background-color:var(--primary-color);
 	color:#fff;
 }
 .about-item-text{
 	padding-left:20px;
 }
-.about-item-text h3{
+.about-item-text a h3{
+	display:inline-block;
 	margin-bottom:15px;
 	color:var(--secondry-color);
 	font-size:18px;
 	font-weight:500;
+	transition:all .3s ease;
+}
+.about-item-text h3:hover{
+	color:var(--primary-color);
 }
 .about-item-text p{
 	margin-bottom:15px;
@@ -599,14 +605,15 @@ h1.logo a{
 	padding:8px 15px;
 	color:#635551;
 	font-size:14px;
+	transition:all .3s ease;
 }
 .menubar-1 a:hover{
-	background-color:var(--bg-color);
+	background-color:#d4f9ffb5;
 	color:var(--primary-color);
 	border-radius:25px;
 }
 .menubar-1 a.active{
-	background-color:var(--bg-color);
+	background-color:#d4f9ffb5;
 	color:var(--primary-color);
 	border-radius:25px;
 }
@@ -892,22 +899,29 @@ h1.logo a{
 	width:100%;
 	margin-bottom:20px;
 }
-.contact-item-1 input:hover{
-border: 2px solid var(--primary-color);
+.contact-item-1 input:focus{
+	border:solid 2px var(--primary-color);
+	outline:0;
 }
-.contact-item-1 textarea:hover{
-border: 1px solid var(--primary-color);
+.contact-item-1 textarea:focus{
+	border:solid 1px var(--primary-color);
+	outline:0;
 }
 .contact-item-1 textarea{
 	padding:12px 10px;
 	width:100%;
 	margin-bottom:20px;
 }
-.contact-item-1  a .button{
-	padding:15px 22px;
+.contact-item-1  button{
+	border:0;
+	font-size:16px;
+}
+.contact-item-1  button .button{
+	padding:12px 22px;
+	cursor:pointer;
 	transition:all .2s ease;
 }
-.contact-item-1  a .button:hover{
+.contact-item-1  button .button:hover{
 	opacity:0.8;
 }
 /*-------footer section-------*/
@@ -964,7 +978,7 @@ border: 1px solid var(--primary-color);
 }
 .foot-hd .sub input[type="email"]{
 	border:0;
-	padding:8px 30px;
+	padding:8px 35px;
 	margin:4px 12px;
 	}
 .foot-hd .sub input[type="submit"]{
@@ -1006,6 +1020,7 @@ border: 1px solid var(--primary-color);
 	text-decoration:none;
 	display:inline-block;
 	text-align:center;
+	margin-right:4px;
 }
 .foot-contact iconify-icon{
 	background-color:var(--primary-color);
