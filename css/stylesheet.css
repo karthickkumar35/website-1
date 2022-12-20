@@ -109,6 +109,7 @@
 .content-info span >a{
 	color:var(--white);
 	text-decoration:none;
+	transition:all .3s ease;
 }
 .content-info span >a:hover{
 	color:var(--primary-color);
@@ -124,12 +125,12 @@
 }
 /*-------nav section-------*/
 .nav-section{
-	padding:15px 0;
+	padding:16px 0;
 }
 h1.logo a{
 	text-decoration:none;
 	display:inline-block;
-	font-size:32px;
+	font-size:30px;
 	font-weight:600;
 	color:#635551;
 	
@@ -144,6 +145,7 @@ h1.logo a{
 	padding:8px 15px;
 	color:#635551;
 	font-size:14px;
+	transition:all .2s ease;
 }
 .menubar a:hover{
 	color:var(--primary-color);
@@ -163,7 +165,7 @@ h1.logo a{
 	margin-bottom:-150px;
 }
 .banner-content{
-	width:60%;
+	width:70%;
 }
 .banner-content h1{
 	font-size:48px;
@@ -173,9 +175,11 @@ h1.logo a{
 	margin-bottom:15px;
 }
 .banner-content p{
-	font-size:20px;
+	font-size:24px;
 	color:#eee;
+	font-family: 'Raleway', sans-serif;
 	margin-bottom:55px;
+	font-weight:500;
 }
 .b-c-g{
 	position:relative;
@@ -214,14 +218,13 @@ h1.logo a{
 }
 /*-------why-choose section-------*/
 .why-choose{
-	background-color:;
 	padding:20px;
 }
 .why-choose-1{
 	color:#fff;
 	background-color:var(--primary-color);
 	padding:40px 30px;
-	border-radius:10px;
+	border-radius:5px;
 	text-align:center;
 }
 .why-choose-1 h3{
@@ -235,6 +238,8 @@ h1.logo a{
 .why-choose-1 p{
 	margin-bottom:30px;
 	text-align:left;
+	font-size:16px;
+	font-weight: 400;
 }	
 .why-choose-1 a{
 	color:#fff;
@@ -410,10 +415,10 @@ h1.logo a{
 	
 }
 .sec-title h2{
-	color:#000;
-	font-size:30px;
+	font-size:32px;
 	margin-bottom:20px;
-	font-weight:600;
+	font-weight:500;
+	color: #635551;
 }
 .sec-title p{
 	margin-bottom:40px;
@@ -485,6 +490,7 @@ h1.logo a{
 	padding:20px;
 	padding-top:140px;
 	border-radius:5px;
+	transition:all .3s ease;
 }
 .our-item-1{
 	background-image:url("../image/values-1.jpg");
@@ -696,6 +702,7 @@ h1.logo a{
 	font-family: 'Raleway', sans-serif;
 	font-weight:700;
 	font-size:18px;
+	color: #473d3a;
 	margin:15px 0;
 }
 .team-item .team-item-h h4{
@@ -721,6 +728,7 @@ h1.logo a{
 	opacity:0;
 	padding:8px 0;
 	transition:all .3s ease;
+	color: #473d3a;
 }
 .team-item:hover .team-item-in{
 	opacity:1;
@@ -740,13 +748,15 @@ h1.logo a{
 	overflow:hidden;
 }
 .pricing-item h3{
-	font-size:20px;
+	font-size:16px;
 	color:#656262;
 	background-color:#f8f8f8;
 	padding:20px 0;
+	font-weight:600;
 }
 .pricing-item  .pricing-item-h{
-	font-size:20px;
+	font-size:16px;
+	font-weight:600;
 	color:#fff;
 	background-color:var(--primary-color);
 	padding:20px 0;
@@ -799,6 +809,7 @@ h1.logo a{
 .button-out a{
 	text-decoration:none;
 	color:#fff;
+	font-size:16px;
 	box-shadow: 0 0 5px #00bcd470;
 	transition:all .2s ease;
 }
@@ -817,7 +828,7 @@ h1.logo a{
 .faq-item{
 	background-color:#fff;
 	padding:18px 30px;
-    margin-top:20px;
+    margin-top:18px;
 }
 .faq-item a{
 	text-decoration:none;
@@ -834,13 +845,13 @@ h1.logo a{
 	justify-content:space-between;
 }
 .faq-item .faq-1st iconify-icon{
-	color:var(--primary-color);
+	color:#00bcd459;
 	font-size:24px;
 	margin-right:5px;
 	vertical-align:middle;
 }
 .faq-item .faq-2nd iconify-icon{
-	font-size:30px;
+	font-size:26px;
 }
 .faq-item .faq-2nd iconify-icon:hover{
 	color:var(--primary-color);
@@ -851,7 +862,7 @@ h1.logo a{
 	padding:80px 0;
 }
 .contact-full{
-	margin:0 150px;
+	padding:0 150px;
 	
 }
 .contact-item{
@@ -882,9 +893,9 @@ h1.logo a{
 	margin-left:16px;
 }
 .contect-icon-1 h2{
-	color:#656262;
-	font-size:22px;
-	font-weight:600;
+	color: #656262;
+	font-size:20px;
+	font-weight:700;
 	font-family: 'Raleway', sans-serif;
 	margin-bottom:10px;
 }
@@ -942,7 +953,7 @@ h1.logo a{
 	margin-bottom:25px;
 }
 .foot-hd p b{
-	font-size:16px;
+	font-size:14px;
 	font-weight:600;
 }
 .foot-hd h3{
@@ -963,10 +974,14 @@ h1.logo a{
 .foot-hd ul li a{
 	text-decoration:none;
 	color:#737B82;
-	transition:all .2s ease;
+	transition:all .3s ease;
 }
 .foot-hd ul li a:hover{
 	color:var(--primary-color);
+}
+.hd-hd{
+	 color: #313030;
+	 font-weight:400;
 }
 .foot-hd .sub{
 	margin-top:30px;
@@ -1005,9 +1020,8 @@ h1.logo a{
 	font-weight:300;
 	margin-bottom:5px;
 }
-.foot-info p b{
-	font-size:14px;
-	font-weight:600;
+.foot-info p a:hover{
+	color:#4dc3d2d9;
 }
 .foot-info p a{
 	color:var(--primary-color);
@@ -1020,20 +1034,17 @@ h1.logo a{
 	text-decoration:none;
 	display:inline-block;
 	text-align:center;
-	margin-right:4px;
-}
-.foot-contact iconify-icon{
 	background-color:var(--primary-color);
 	color:#fff;
-	font-size:28px;
-	width:40px;
-	height:40px;
-    padding-left:16%;
+	font-size:22px;
+	width:38px;
+	height:38px;
+	line-height:45px;
+    margin:0 2px;
 	border-radius:50%;
-	transform:translateX(-50%);
-	padding-top:16%;
 	transition:all .2s ease;
 }
-.foot-contact iconify-icon:hover{
-	opacity:0.6;
+.foot-contact a:hover{
+	background-color:#4dc3d2d9;
+	color:#fff;
 }
