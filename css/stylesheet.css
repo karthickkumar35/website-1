@@ -423,6 +423,7 @@ h1.logo a{
 .sec-title p{
 	margin-bottom:40px;
 	font-weight:400;
+	font-size:15 	px;
 }
 .serives-item{
 	background-color:#fff;
@@ -783,6 +784,7 @@ h1.logo a{
 .pricing-item h5>span{
 	color:var(--primary-color);
 	font-size:35px;
+	font-weight:600;
 }
 .pricing-item h5 span sup{
 	font-size:20px;
