@@ -397,6 +397,7 @@ h1.logo a{
 	opacity:0.8;
 	margin:0 3px;
 	cursor:pointer;
+	background-color:#fff;
 }
 .circles span:hover{
 	background-color:var(--primary-color);
@@ -816,7 +817,7 @@ h1.logo a{
 	transition:all .2s ease;
 }
 .button-out a:hover{
-	opacity:0.6;
+	opacity:0.8;
 }	
 /*-------faq section-------*/
 .faq{
@@ -935,7 +936,8 @@ h1.logo a{
 	transition:all .2s ease;
 }
 .contact-item-1  button .button:hover{
-	opacity:0.8;
+	background-color:#00bcd4db;
+	color:#fff;
 }
 /*-------footer section-------*/
 .foot{
@@ -1012,7 +1014,8 @@ h1.logo a{
 	transition:all .2s ease;
 }
 .foot-hd .sub input[type="submit"]:hover{
-	opacity:0.8;
+	background-color:#00bcd4db;
+	color:#fff;
 }
 .foot-1{
 	padding:20px 0;
@@ -1023,7 +1026,7 @@ h1.logo a{
 	margin-bottom:5px;
 }
 .foot-info p a:hover{
-	color:#4dc3d2d9;
+	color:#00bcd4b8;
 }
 .foot-info p a{
 	color:var(--primary-color);
@@ -1047,6 +1050,6 @@ h1.logo a{
 	transition:all .2s ease;
 }
 .foot-contact a:hover{
-	background-color:#4dc3d2d9;
+	background-color:#00bcd4db;
 	color:#fff;
 }
